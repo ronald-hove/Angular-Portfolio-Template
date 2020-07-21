@@ -7,7 +7,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class LinkifyPipe implements PipeTransform {
 
-  constructor(private _domSanitizer: DomSanitizer) {}
+  // tslint:disable-next-line: variable-name
+  constructor(private _domSanitizer?: DomSanitizer) {}
 
   transform(value: string): any {
     if (value) {

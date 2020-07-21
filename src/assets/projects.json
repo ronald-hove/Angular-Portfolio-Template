@@ -3,7 +3,7 @@
     {
       "preview": "assets/media/projects/portfolio.png",
       "created_at": "2019-07-20T14:18:15.923+02:00",
-      "name": "This Portfolio Website",
+      "name": "This Portfolio Web Application",
       "description": "I designed the code architecture for this portfolio website and built it from ground up using Angular Framework , \n\nI open sourced the code and uploaded it to github so that other people can use it for their portfolios. \n\nURL is https://github.com/ronald-hove/Angular-Portfolio-Template"
     },
     {
