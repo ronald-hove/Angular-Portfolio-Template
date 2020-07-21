@@ -58,3 +58,10 @@ h5 {
 .fa,.fab {
   color: #adaeaf;
 }
+
+@media(max-width: 768px) {
+  .rh-profile-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
