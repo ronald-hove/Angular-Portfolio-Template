@@ -1,5 +1,5 @@
 import { DataApiService } from './../../services/http/data-api.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -13,11 +13,28 @@ export class HomeComponent implements OnInit {
   workExperience;
   profile;
 
+  showMobileImages = false;
+
   constructor(
     public dataApi: DataApiService
   ) { }
 
+  @HostListener('window:resize', ['$event'])
+  onresize(event): void {
+    console.log('WINDOW_RESIZE_EVENT', event);
+    this.checkWindowSize();
+  }
+
+  private checkWindowSize(): void {
+    window.innerWidth <= 768
+      ? this.showMobileImages = true
+      : this.showMobileImages = false;
+  }
+
   async ngOnInit(): Promise<void> {
+    this.checkWindowSize();
+
+
     this.skills = await this.dataApi.getTopSkills();
     console.log('SKILLS', this.skills);
 
