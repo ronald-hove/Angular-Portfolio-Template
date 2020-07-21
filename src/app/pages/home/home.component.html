@@ -124,7 +124,7 @@
                         <div class="col-md-8">
                           <div class="card-body">
                             <h5 class="card-title">{{project?.name}}</h5>
-                            <p style="white-space: pre-wrap;" class="card-text" [innerHTML]="project?.description"></p>
+                            <p style="white-space: pre-wrap;" class="card-text" [innerHTML]="project?.description | linkify"></p>
                           </div>
                         </div>
                       </div>
