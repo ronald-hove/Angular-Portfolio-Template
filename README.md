@@ -2,7 +2,7 @@
 
 This is a free portfolio template I wrote in angular for my own portfolio hosted @
 
-https://ronald.hove.github.io
+https://ronald-hove.github.io/
 
 # Index
 
