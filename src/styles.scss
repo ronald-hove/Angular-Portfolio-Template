@@ -12,9 +12,25 @@ h5 {
   width: 120%;
 }
 
-.rh-profile-info {
-  // position: absolute;
-  // margin-left: 120px;
+.rh-profile-image {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+}
+
+.rh-preview-image {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  cursor: pointer;
 }
 
 .rh-card {

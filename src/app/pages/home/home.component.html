@@ -11,7 +11,7 @@
                   <hr class="m-0 mb-3">
                   <div class="row">
                     <div class="col-lg-3">
-                      <img src="https://via.placeholder.com/150" class="rh-profile-img" alt="...">
+                      <img [src]="profile?.avatar" class="rh-profile-img" alt="...">
                     </div>
                     <div class="col-lg-9 my-auto rh-profile-info">
                       <h5 >{{profile?.name}}</h5>
@@ -115,7 +115,11 @@
                     <div class="card mb-3" *ngFor="let project of featuredProjects?.projects">
                       <div class="row no-gutters">
                         <div class="col-md-4">
-                          <img src="https://via.placeholder.com/150" class="card-img" alt="...">
+                        <div
+                           class="rh-preview-image"
+                          [ngStyle]="{
+                            'background-image': 'url(' + project?.preview + ')'
+                          }"></div>
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
