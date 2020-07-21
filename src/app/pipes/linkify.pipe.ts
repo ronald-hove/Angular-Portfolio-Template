@@ -1,20 +1,29 @@
 import { element } from 'protractor';
 import { Pipe, PipeTransform } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Pipe({
   name: 'linkify'
 })
 export class LinkifyPipe implements PipeTransform {
 
-  transform(value: string): string {
+  constructor(private _domSanitizer: DomSanitizer) {}
+
+  transform(value: string): any {
     if (value) {
       const temp = value.split(' ');
-      console.log('LINKIFY', temp);
-      const indx = temp.findIndex((subStr) => {
-        return subStr.trim().startsWith('http') || subStr.trim().startsWith('https');
+      const indexOfOccurrence: any[] = [];
+      const links = temp.filter((subStr, index) => {
+        const condition = subStr.trim().startsWith('http') || subStr.trim().startsWith('https');
+        if (condition) {
+          indexOfOccurrence.push(index);
+        }
+        return condition;
       });
-      temp[indx] = `<a href="${temp[indx]}">${temp[indx]}</a>`;
-      return temp.join(' ');
+      links.forEach((link, indx) => {
+        temp[indexOfOccurrence[indx]] = `<a href="${link}" target="_blank">${link}</a>`;
+      });
+      return this._domSanitizer.bypassSecurityTrustHtml(temp.join(' '));
     }
   }
 
