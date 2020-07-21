@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: whitesmoke !important;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rh-profile-img {
+  width: 120%;
+}
+
+.rh-profile-info {
+  // position: absolute;
+  // margin-left: 120px;
+}
+
+.rh-card {
+  border: none !important;
+  border-radius: .2rem !important;;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 5px;
+}
+
+.rh-skill {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  background-color: rgb(228, 240, 252);
+  color: rgb(94, 165, 238) !important;
+  height: 35px;
+  border-radius: 3px;
+  padding: 0px 12px;
+  margin: 0px 6px 6px 0px;
+}
+
+.fa,.fab {
+  color: #adaeaf;
+}

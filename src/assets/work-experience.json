@@ -1,0 +1,58 @@
+{
+  "work": [
+    {
+      "date": "September 2018 - Present",
+      "title": "Software Developer at Lava Lamp Lab",
+      "description": "Conduct Work in developing cross-platform mobile applications (iOS and Android) as well as Backend applications. \n\nWe mainly develop using Agile over two-week sprints.",
+      "stack": [
+        "Ionic",
+        "Angular",
+        "Node.js",
+        "npm",
+        "Git",
+        "Bitbucket",
+        "GitHub",
+        "Agile",
+        "Laravel",
+        "Express.js",
+        "Azure",
+        "Cosmos DB",
+        "JavaScript",
+        "TypeScrip"
+      ]
+    },
+    {
+      "date": "September 2017 - September 2018",
+      "title": "Technical Intern at WC Colab for eInclusion and Social Innovation | Core Team",
+      "description": "I worked in a team of students focussing on projects centred around applications development, robotics, machine learning and designing courses to teach other students about these applications of technology.",
+      "stack": [
+        "Python",
+        "Linux",
+        "Angular",
+        "Ionic"
+      ]
+    },
+    {
+      "date": "January 2017 - present",
+      "title": "Freelance Software Developer",
+      "description": "I take on freelance contracts to build awesome looking web and mobile apps for clients in Cape Town and Around South Africa.",
+      "stack": [
+        "Angular",
+        "PHP",
+        "Python",
+        "RESTful API Design",
+        "MongoDB",
+        "Firebase",
+        "MySQL",
+        "Node.js",
+        "npm",
+        "Ionic",
+        "Database Design",
+        "Amazon EC2",
+        "Postman",
+        "Linux"
+      ]
+    }
+
+  ]
+}
