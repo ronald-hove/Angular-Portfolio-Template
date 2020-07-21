@@ -26,4 +26,8 @@ export class DataApiService {
   getWorkHistory(): Promise<any> {
     return this.http.get('assets/work-experience.json').toPromise();
   }
+
+  getBase64CV(): Promise<any> {
+    return this.http.get('assets/media/base64/CV.json').toPromise();
+  }
 }
