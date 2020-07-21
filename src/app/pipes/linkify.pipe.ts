@@ -1,4 +1,3 @@
-import { element } from 'protractor';
 import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
