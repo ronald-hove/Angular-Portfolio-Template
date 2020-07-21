@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
 
   }
 
-  async downloadResume(name): Promise<void> {
+  async downloadResume(): Promise<void> {
     const pdf: any =  await this.dataApi.getBase64CV();
     const byteCharacters = atob(pdf.resume);
     const byteNumbers = new Array(byteCharacters.length);
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
     const file = new Blob([byteArray], { type: 'application/pdf;base64' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(file);
-    a.setAttribute('download', `${name}.pdf`.replace(/\s/g, ''));
+    a.setAttribute('download', `${this.profile.name} CV.pdf`.replace(/\s/g, ''));
     a.click();
   }
 
