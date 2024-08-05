@@ -1,0 +1,125 @@
+{
+  "work": [
+    {
+      "date": "Present",
+      "title": "AI Researcher",
+      "description": "● Skilled in foundational machine learning, supervised and unsupervised learning, with a focus on regression and neural networks.\n\n● Since the release of OpenAI Codex in 2021, I have been conducting AI research in the domain of building compliant mechanisms to address African operational inefficiencies.\n\n● I am working on an open-source leapfrog manual that will be a guideline for leveraging existing systems available in Western regions to solve African operational problems with Artificial Intelligence.",
+      "stack": [
+        "AI",
+        "Machine Learning",
+        "Python",
+        "Neural Networks",
+        "System Architecture"
+      ]
+    },
+    {
+      "date": "October 2023 - Present",
+      "title": "Senior Software Engineer at SweepSouth",
+      "description": "● Conducted software audits for the existing tech stack to identify bottlenecks in codebase.\n\n● Migrated legacy code into a new SPA framework, SvelteKit, for the delivery platform.\n\n● Developed backend features using Python Django.",
+      "stack": [
+        "Python",
+        "Django",
+        "SvelteKit",
+        "JavaScript | Typescript",
+        "System Architecture"
+      ]
+    },
+    {
+      "date": "February 2023 - Present",
+      "title": "Co-Founder and CTO at fima.ai",
+      "description": "● Building an AI startup in stealth mode with co-founders.\n\n● Addressing the problem of disjointed work information in traditional collaboration tools.\n\n● Rethinking this issue from the ground up, considering society's current inflection point. Developing tools to fundamentally change the way work gets done.",
+      "stack": [
+        "AI",
+        "Python",
+        "Cloud Architecture",
+        "System Architecture"
+      ]
+    },
+    {
+      "date": "January 2017 - Present",
+      "title": "Freelance Software Engineer | Data Analyst",
+      "description": "● Open to freelance contracts building mobile and web apps | solving computational problems.",
+      "stack": [
+        "Software Engineering",
+        "Computer Science",
+        "Data Science | Analytics "
+      ]
+    },
+    {
+      "date": "February 2022 - October 2023",
+      "title": "Technical Lead at SovTech",
+      "description": "● Conducted software audits to ensure incoming software products could integrate seamlessly into available teams.\n\n● Provided technical oversight, sharing insights from past project successes and failures.\n\n● Conducted 1:1 sessions with developer teams to gauge career progress, set new growth milestones, identify team inefficiencies, and enhance overall developer happiness.",
+      "stack": [
+        "Software Engineering",
+        "Software Auditing",
+        "Technical Oversight",
+        "Technical Interviewing"
+      ]
+    },
+    {
+      "date": "June 2021 - October 2023",
+      "title": "Senior Full Stack Engineer at SovTech",
+      "description": "● Individual contributor on a local e-hailing platform.\n\n● Managed the development of two mobile apps, one web app, and the connected backend.\n\n● Built automated tests that could virtually simulate the driver and passenger network.\n\n● Involved in company-wide innovation projects, including hackathons.",
+      "stack": [
+        "JavaScript | Typescript",
+        "Mobile Development",
+        "Python",
+        "Node.js",
+        "MongoDB",
+        "SQL",
+        "Cloud Engineering"
+      ]
+    },
+    {
+      "date": "October 2020 - June 2021",
+      "title": "Software Engineer at Warp Development",
+      "description": "● Implemented end-to-end test automation for the Karri Pay mobile app using Appium.\n\n● Developed a mobile application for a fruit packing warehouse.\n\n● Contributed to the development of the Medihelp health insurance PWA.",
+      "stack": [
+        "JavaScript | Typescript",
+        "Angular",
+        "Appium",
+        "Node.js",
+        "Ionic",
+        "MongoDB",
+        "MySQL",
+        "AWS",
+        "Firebase | GCP"
+      ]
+    },
+    {
+      "date": "September 2018 - October 2020",
+      "title": "Software Developer at Lava Lamp Lab",
+      "description": "● Individual technical contributor on a mobile app project for a fitness on-demand startup, utilizing a hybrid app tech stack (Ionic/Angular) and Laravel on the backend.\n\n● Part of a team that built a security alerting platform for a company managing Microsoft Azure Tenants for its clients.",
+      "stack": [
+        "Ionic",
+        "Angular",
+        "Laravel",
+        "Node.js",
+        "Azure",
+        "Cosmos DB",
+        "JavaScript | Typescript"
+      ]
+    },
+    {
+      "date": "September 2017 - September 2018",
+      "title": "Technical Intern at WC Colab for eInclusion and Social Innovation | Core Team",
+      "description": "● Focused on projects centered around applications development, robotics, machine learning, and designing courses to teach other students.\n\n● Built a mobile application serving as a social hub for students to interact and share information about campus events.",
+      "stack": [
+        "Python",
+        "Linux",
+        "Mobile Development",
+        "Machine Learning",
+        "Robotics"
+      ]
+    },
+    {
+      "date": "February 2015 - November 2015",
+      "title": "Physics 151 Tutor at the University of the Western Cape",
+      "description": "● Worked as a tutor for a first-year physics laboratory course, assisting students in scientific experimentation with a focus on conceptual physics and measurement concepts.",
+      "stack": [
+        "Mathematics",
+        "Physics"
+      ]
+    }
+  ]
+}

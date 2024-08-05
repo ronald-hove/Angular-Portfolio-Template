@@ -1,0 +1,36 @@
+{
+  "email": "rnldhv91@gmail.com",
+  "location": "Cape Town, South Africa",
+  "name": "Ronald Hove",
+  "phone": "",
+  "avatar": "https://avatars.githubusercontent.com/u/21257778?v=4",
+  "education": [
+    {
+      "title": "Bachelor of Science (BSc) in Computer Science and Information Systems",
+      "meta": "University of the Western Cape,  Jan 2014 – Nov 2018"
+    }
+  ],
+  "about": "Hi 👋, I'm a computer scientist passionate about solving complex problems and building top-tier applications. I thrive in solo work, teamwork, or leadership roles, blending technical skills with product management and customer focus.\n\nMy expertise spans software engineering, system architecture, API, and database design. I've worked across AWS, Azure, and GCP. Agile and always eager to innovate, I'm on a mission to make technology fun and impactful.",
+  "socials": [
+    {
+      "name": "rnldhv91@gmail.com",
+      "link": "mailto:rnldhv91@gmail.com",
+      "icon": "fa fa-envelope"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/ronald-hove",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/ronald-hove/",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/ronald_mcstan/",
+      "icon": "fab fa-instagram"
+    }
+  ]
+}

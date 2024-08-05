@@ -1,0 +1,225 @@
+<div class="rh-bg">
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-lg-4 ">
+        <div class="sticky-top">
+          <div class="row mt-3 ">
+            <div class="col-lg-12">
+              <div class="card rh-card">
+                <div class="card-body" #card_contact>
+                  <div class="row">
+                    <div class="col">
+                      <h5>Contact Information</h5>
+                    </div>
+                    <div class="col-auto">
+                      <ng-container>
+                        <a style="cursor: pointer;" (click)="speak(card_contact, speechIcon)">
+                          <span class="mr-2">
+                            <i #speechIcon [ngClass]="'fa fa-volume-up'" aria-hidden="true"></i>
+                          </span>
+                        </a><br>
+                      </ng-container>
+                    </div>
+                  </div>
+                  <hr class="m-0 mb-3">
+                  <div class="row">
+                    <div class="col-auto rh-profile-info">
+                      <h5>{{profile?.name}}</h5>
+                      <p class="m-0">{{profile?.location}}</p>
+                      <ng-container *ngFor="let social of profile?.socials">
+                        <a [href]="social?.link">
+                          <span class="mr-2"><i [ngClass]="social?.icon" aria-hidden="true"></i></span>{{social?.name}}
+                        </a><br>
+                      </ng-container>
+                      <button class="btn btn-outline-primary mt-1" (click)="downloadResume()">Download CV<span class="ml-2"><i class="fas fa-cloud-download-alt"></i></span></button>
+                    </div>
+                    <div class="col text-right">
+                      <img [src]="profile?.avatar" class="rh-profile-img" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 ">
+            <div class="col-lg-12">
+              <div class="card rh-card">
+                <div class="card-body" #card_about>
+                  <div class="row">
+                    <div class="col">
+                      <h5>About</h5>
+                    </div>
+                    <div class="col-auto">
+                      <ng-container>
+                        <a style="cursor: pointer;" (click)="speak(card_about, speechIconAbout)">
+                          <span class="mr-2">
+                            <i #speechIconAbout [ngClass]="'fa fa-volume-up'" aria-hidden="true"></i>
+                          </span>
+                        </a><br>
+                      </ng-container>
+                    </div>
+                  </div>    
+                  <hr class="m-0 mb-3">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p style="white-space: pre-wrap;" class="card-text" [innerHTML]="profile?.about"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <div class="card rh-card">
+              <div class="card-body" #card_education>
+                <div class="row">
+                  <div class="col">
+                    <h5>Education</h5>
+                  </div>
+                  <div class="col-auto">
+                    <ng-container>
+                      <a style="cursor: pointer;" (click)="speak(card_education, speechIconEducation)">
+                        <span class="mr-2">
+                          <i #speechIconEducation [ngClass]="'fa fa-volume-up'" aria-hidden="true"></i>
+                        </span>
+                      </a><br>
+                    </ng-container>
+                  </div>
+                </div>  
+                <hr class="m-0 mb-3">
+                <div class="row">
+                  <div class="col-auto my-auto pr-0">
+                    <img [src]="'assets/media/uwc_logo.jpeg'" class="rh-school-img" alt="...">
+                  </div>
+                  <div class="col my-auto">
+                    <ng-container *ngFor="let school of profile?.education">
+                      <h5 class="m-0">{{school?.title}}</h5>
+                      <p class="m-0"><small>{{school?.meta}}</small></p>
+                    </ng-container>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <div class="card rh-card">
+              <div class="card-body" #card_skills>
+                <div class="row">
+                  <div class="col">
+                    <h5> My Top Skills</h5>
+                  </div>
+                  <div class="col-auto">
+                    <ng-container>
+                      <a style="cursor: pointer;" (click)="speak(card_skills, speechIconTopSkills)">
+                        <span class="mr-2">
+                          <i #speechIconTopSkills [ngClass]="'fa fa-volume-up'" aria-hidden="true"></i>
+                        </span>
+                      </a><br>
+                    </ng-container>
+                  </div>
+                </div> 
+                <hr class="m-0 mb-3">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a  class="mr-1 rh-skill" *ngFor="let skill of skills?.top_skills" >{{skill}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <div class="card rh-card">
+              <div class="card-body" #card_experience>
+                <div class="row">
+                  <div class="col">
+                    <h5> Industry Experience</h5>
+                  </div>
+                  <div class="col-auto">
+                    <ng-container>
+                      <a style="cursor: pointer;" (click)="speak(card_experience, speechIconExperience)">
+                        <span class="mr-2">
+                          <i #speechIconExperience [ngClass]="'fa fa-volume-up'" aria-hidden="true"></i>
+                        </span>
+                      </a><br>
+                    </ng-container>
+                  </div>
+                </div> 
+                <hr class="m-0 mb-3">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="mb-2" *ngFor="let work of workExperience?.work; index as i">
+                      <p><small>{{work?.date}}</small></p>
+                      <h5>{{work?.title}}</h5>
+                      <p style="white-space: pre-wrap;" class="card-text" [innerHTML]="work?.description"></p>
+                      <a  class="mr-1 rh-skill" *ngFor="let skill of work?.stack" >{{skill}}</a>
+                      <hr class="m-0 mt-3"*ngIf="i < workExperience?.work?.length - 1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <div class="card rh-card">
+              <div class="card-body" #card_featured_work>
+                <div class="row">
+                  <div class="col">
+                    <h5> Featured Projects | Work</h5>
+                  </div>
+                  <div class="col-auto">
+                    <ng-container>
+                      <a style="cursor: pointer;" (click)="speak(card_featured_work, speechIconExperience)">
+                        <span class="mr-2">
+                          <i #speechIconExperience [ngClass]="'fa fa-volume-up'" aria-hidden="true"></i>
+                        </span>
+                      </a><br>
+                    </ng-container>
+                  </div>
+                </div> 
+                <hr class="m-0 mb-3">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card mb-3" *ngFor="let project of featuredProjects?.projects">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <div
+                          [ngClass]="{'rh-preview-image': !showMobileImages, 'rh-preview-image-mobile': showMobileImages}"
+                          [ngStyle]="{
+                            'background-image': 'url(' + project?.preview + ')'
+                          }">
+                        </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">{{project?.name}}</h5>
+                            <p style="white-space: pre-wrap;" class="card-text" [innerHTML]="project?.description | linkify"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
